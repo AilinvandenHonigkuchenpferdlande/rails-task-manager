@@ -1,0 +1,24 @@
+<script src="https://kit.fontawesome.com/4b1694a3d8.js" crossorigin="anonymous"></script>
+
+
+<h1>My tasks</h1>
+
+<ul>
+  <% @tasks.each do |task| %>
+    <li>
+      <% if task.completed %>
+        <input type="checkbox" id="task.id" name="task.title" checked>
+      <% else %>
+        <input type="checkbox" id="task.id" name="task.title">
+      <% end %>
+      <%= link_to task.title, task_path(task) %>
+      <%= link_to 'delete', task_path(task), method: :delete, data: { confirm: "Are you sure?" } %>
+      <i class="fas fa-trash-alt"></i>
+    </li>
+  <% end %>
+</ul>
+
+
+<strong><%= link_to '+ Add a new task', new_path %></strong>
+
+

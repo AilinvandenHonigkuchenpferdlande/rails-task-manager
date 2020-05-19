@@ -1,0 +1,21 @@
+<div class="banner">
+  <h2><%= @task.title %></h2>
+  <div id="edit-button">
+    <%= link_to 'Edit this task', edit_path  %>
+  </div>
+</div>
+
+<div class="details">
+  <h3><%= @task.details %></h3>
+</div>
+
+<% if @task.completed == true %>
+  <p><%= 'This task is completed.' %><br></p>
+<% else %>
+  <p><%= 'This task is not completed yet.' %><br></p>
+<% end %>
+
+
+<p><%= link_to 'Back to list', tasks_path  %></p>
+
+

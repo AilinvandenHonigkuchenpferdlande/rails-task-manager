@@ -1,0 +1,47 @@
+// Place all the styles related to the Tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  font-family: sans-serif;
+}
+
+
+ul {
+  padding: 0px;
+  border-bottom: lightgrey 1px solid;
+  padding-bottom: 20px;
+}
+
+li {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.details {
+  width: 300px;
+  border-radius: 8px;
+  background-color: lightblue;
+  padding: 10px;
+}
+
+p {
+  padding-left: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#edit-button {
+  background: lightgrey;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
